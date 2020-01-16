@@ -1,10 +1,6 @@
---schemas are like different discrete sections of our database
---when we work in a schema, it allows table to have the same name as tables in other schemas
---now every table is accessed by schemaName.tableName
---e.g. garden_book.garden
-drop schema if exists ers_project cascade; --Nukes the entire schema. cascade says get rid of everything in the schema
-create schema ers_project; --Then recreating it
-set schema 'ers_project'; --for rest of script work in this schema
+drop schema if exists ers_project cascade; 
+create schema ers_project; 
+set schema 'ers_project'; 
 
 
 create table users (
